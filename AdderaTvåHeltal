@@ -1,0 +1,22 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+/*Addera två tal oc skriv ut summan*/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+int main()
+{
+	int tal1 = 0;
+	int tal2 = 0;
+	int nytt_tal;
+	int summa;
+	
+	printf("Addera två tal och få ut summan");
+	nytt_tal = scanf_s("%d %d", &tal1, &tal2);
+	getchar();
+	summa = tal1 + tal2;
+	printf_s("Summan av de talen %d och %d är %d", tal1, tal2, summa);
+	getchar(); 
+    return 0;
+}
